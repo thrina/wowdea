@@ -1,0 +1,18 @@
+
+<div class="container">
+  <div class="row">
+    <div class='col-8'>
+      <form #imageForm =ngForm>
+        <div class="row">
+          <!-- <input type ='text' #Caption ngModel name="caption" id="Caption">
+            <label for="Caption">Caption</label> -->
+        </div>
+        <img [src]='imageUrl'alt="img">
+          <input type="file" #Image accept="image/*" (change)="handleFileInput($event.target.files)">
+          <button type="submit">Submit</button>
+      </form>
+
+    </div>
+  
+  </div>
+</div>
